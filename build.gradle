@@ -1,4 +1,4 @@
-group 'ru.satahippy'
+group 'com.github.satahippy'
 version '0.1.0'
 
 ext {
