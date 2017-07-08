@@ -1,0 +1,35 @@
+group 'ru.satahippy'
+version '0.1.0'
+
+ext {
+    springVersion = "4.3.9.RELEASE"
+    springBootVersion = "1.5.4.RELEASE"
+    junitVersion = "4.12"
+}
+
+apply plugin: 'java'
+apply plugin: 'maven-publish'
+
+sourceCompatibility = 1.7
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile("org.springframework:spring-context:$springVersion")
+    compile("org.springframework.boot:spring-boot-autoconfigure:$springBootVersion")
+
+    testCompile("junit:junit:$junitVersion")
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
+    repositories {
+        mavenCentral()
+    }
+}
