@@ -30,3 +30,10 @@ class SomeService {
     Collection<Bean> beans;
 }
 ```
+
+## Release
+
+We're using Sonatype for releasing.
+
+In order to make this work you need to specify some gradle properties in `~/.gradle/gradle.properties`.
+You can find example of this file in resources.

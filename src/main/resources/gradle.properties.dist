@@ -1,0 +1,6 @@
+signing.keyId={8-bit key}
+signing.password={your password}
+signing.secretKeyRingFile={absolute file location}
+
+sonatypeUsername={your sonatype username}
+sonatypePassword={your sonatype password}
